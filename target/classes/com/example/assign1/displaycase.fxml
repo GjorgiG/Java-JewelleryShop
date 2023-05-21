@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.CheckBox?>
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Display Cases" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assign1.DisplayCaseController" >
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="437.0" layoutY="48.0" mnemonicParsing="false" text="Add Display Case" onAction="#AddDisplayCase" />
+            <Button layoutX="431.0" layoutY="161.0" mnemonicParsing="false" text="Delete Display Case" onAction="#DeleteDisplayCase"/>
+             <Button layoutX="431.0" layoutY="251.0" mnemonicParsing="false" text="Clear Display Cases" onAction="#ClearDisplayCase"/>
+             <Button layoutX="610.0" layoutY="330.0" mnemonicParsing="false" text="Save"/>
+             <Button layoutX="609.0" layoutY="360.0" mnemonicParsing="false" text="Load" />
+             <CheckBox fx:id="lighting" layoutX="595.0" layoutY="20.0" text="Lighting"/>
+             <CheckBox fx:id="mounted" layoutX="595.0" layoutY="40.0" text="Mounted"/>
+             <Button layoutX="457.0" layoutY="350.0" mnemonicParsing="false" text="Go Home" onAction="#Home" />
+            <ListView fx:id="listName" prefHeight="374.0" prefWidth="382.0" />
+            <TextField fx:id="txtNum" layoutX="417.0" layoutY="14.0" promptText="Enter ID..." />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
